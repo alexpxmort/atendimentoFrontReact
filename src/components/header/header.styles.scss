@@ -1,0 +1,52 @@
+$color-header: #3c47e4;
+$font-color: #fff;
+
+.header {
+  top: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  background-color: $color-header;
+
+  @media screen and (max-width: 800px) {
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .logo-container {
+    height: 100px;
+    width: 75px;
+    padding: 15px;
+
+    @media screen and (max-width: 800px) {
+      width: 50px;
+      padding: 0;
+    }
+  }
+
+  .options {
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+
+    @media screen and (max-width: 800px) {
+      width: 80%;
+    }
+
+    .option {
+      padding: 10px 15px;
+      cursor: pointer;
+      color: $font-color;
+    }
+
+    a {
+      text-decoration: none;
+      color: $font-color;
+    }
+  }
+}
